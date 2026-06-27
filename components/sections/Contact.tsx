@@ -80,7 +80,7 @@ export function Contact() {
           <button
             type="submit"
             disabled={status === "pending"}
-            className="mt-8 min-h-14 w-full rounded-pill bg-accent px-8 text-sm font-bold text-white shadow-orange transition hover:-translate-y-0.5 hover:bg-accent-dark disabled:cursor-wait disabled:opacity-75"
+            className="mt-8 min-h-14 w-full rounded-pill bg-accent px-8 text-sm font-bold text-white shadow-primary transition hover:-translate-y-0.5 hover:bg-accent-dark disabled:cursor-wait disabled:opacity-75"
           >
             {status === "pending" ? "Submitting..." : status === "success" ? "Sent" : status === "error" ? "Check details" : "Submit"}
           </button>

@@ -21,7 +21,7 @@ export function Process() {
         <motion.div variants={stagger} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.15 }} className="grid gap-5">
           {steps.map(([num, title, description], index) => (
             <motion.article key={title} variants={reveal} className="rounded-[28px] p-8 md:p-10 bg-white">
-              <span className="inline-flex min-h-11 items-center gap-4 rounded-pill px-6 font-display text-lg font-bold bg-accent text-white shadow-orange">
+              <span className="inline-flex min-h-11 items-center gap-4 rounded-pill px-6 font-display text-lg font-bold bg-accent text-white shadow-primary">
                 {num}—
                 {title}
               </span>

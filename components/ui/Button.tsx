@@ -11,7 +11,7 @@ type BaseProps = {
 
 const styles = {
   primary:
-    "bg-accent text-white shadow-orange hover:bg-accent-dark focus-visible:ring-accent",
+    "bg-accent text-white shadow-primary hover:bg-accent-dark focus-visible:ring-accent",
   secondary:
     "bg-white text-ink hover:bg-zinc-100 focus-visible:ring-zinc-300",
   dark: "bg-black text-white hover:bg-zinc-800 focus-visible:ring-zinc-500"

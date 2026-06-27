@@ -18,7 +18,7 @@ type ArrowButtonProps = {
 };
 
 const variants = {
-  solid: "bg-accent text-on-accent shadow-orange hover:bg-accent-dark focus-visible:ring-accent",
+  solid: "bg-accent text-on-accent shadow-primary hover:bg-accent-dark focus-visible:ring-accent",
   ghost: "bg-white text-ink hover:bg-zinc-100 focus-visible:ring-zinc-300",
   dark: "bg-black text-white hover:bg-zinc-800 focus-visible:ring-zinc-500"
 };

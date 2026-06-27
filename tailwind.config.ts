@@ -35,10 +35,10 @@ const config: Config = {
         soft: ["var(--font-inter)", "Inter", "sans-serif"]
       },
       borderRadius: {
-        xl: "40px",
-        xl2: "1.5rem",
-        xl3: "2rem",
-        xl4: "2.5rem",
+        xl: "24px",
+        xl2: "1rem",
+        xl3: "1.5rem",
+        xl4: "2rem",
         pill: "999px"
       },
       maxWidth: {
@@ -46,7 +46,7 @@ const config: Config = {
       },
       boxShadow: {
         soft: "0 20px 60px rgba(24,24,27,0.08)",
-        orange: "0 18px 36px rgba(246,70,23,0.24)"
+        primary: "0 18px 36px rgba(4,50,109,0.24)"
       }
     }
   },
