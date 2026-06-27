@@ -12,7 +12,7 @@ export function Footer() {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.2 }}
-      className="border-t border-zinc-100 bg-[#f6f6f7] px-[15px] py-20 text-ink md:px-[30px]"
+      className="border-t border-zinc-100 bg-[#f6f6f7] px-[15px] py-12 text-ink md:px-[30px]"
     >
       <div className="container-main">
         <div className="flex flex-wrap justify-center gap-10 p-0 md:gap-32">
@@ -73,7 +73,7 @@ export function Footer() {
           </div>
 
         </div>
-        <div className="mt-20 flex flex-wrap items-center justify-between gap-4 rounded-[60px] bg-white px-8 py-6 text-sm text-zinc-500 shadow-[0_1px_0_rgba(24,24,27,0.04)]">
+        <div className="mt-12 flex flex-wrap items-center justify-between gap-4 rounded-[60px] bg-white px-8 py-6 text-sm text-zinc-500 shadow-[0_1px_0_rgba(24,24,27,0.04)]">
           <a href="/legal/privacy" className="transition hover:text-ink">Privacy Policy</a>
           <a href="/legal/terms" className="transition hover:text-ink">Terms of Service</a>
           <span>© 2026 Developer Society, Christ University. Built for launch.</span>

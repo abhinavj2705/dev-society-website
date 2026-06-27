@@ -57,7 +57,7 @@ export function Contact() {
   }
 
   return (
-    <section id="contact" className="section-pad pt-8">
+    <section id="contact" className="pt-8 pb-12">
       <div className="container-main">
         <SectionHeader eyebrow="Contact" title="Have a project in mind?" />
         <motion.form
