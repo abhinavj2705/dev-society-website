@@ -12,10 +12,10 @@ export default function ContactPage() {
           className="max-w-4xl font-display text-5xl font-bold leading-[0.98] text-ink md:text-8xl"
         />
         <p className="mt-7 max-w-xl text-lg leading-relaxed text-zinc-500">
-          Share what you are trying to create with us.
+          Share what you are trying to create with us. You can also always directly meet us on campus to discuss your ideas!
         </p>
       </section>
-      <Contact />
+      <Contact hideHeader />
     </main>
   );
 }

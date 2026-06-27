@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 
 type Status = "idle" | "pending" | "success" | "error";
 
-export function Contact() {
+export function Contact({ hideHeader = false }: { hideHeader?: boolean }) {
   const [status, setStatus] = useState<Status>("idle");
   const [errors, setErrors] = useState<Record<string, string>>({});
 
@@ -66,7 +66,7 @@ export function Contact() {
   return (
     <section id="contact" className="pt-8 pb-12">
       <div className="container-main">
-        <SectionHeader eyebrow="Contact" title="Have a project in mind?" />
+        {!hideHeader && <SectionHeader eyebrow="Contact" title="Have a project in mind?" />}
         <motion.form
           variants={reveal}
           initial="hidden"
