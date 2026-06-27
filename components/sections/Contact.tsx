@@ -35,11 +35,18 @@ export function Contact() {
 
     // Web3Forms integration
     data.append("access_key", process.env.NEXT_PUBLIC_WEB3FORMS_KEY || "17cec68d-518a-4c84-afb2-23c0a61e83d5");
+    
+    const object = Object.fromEntries(data.entries());
+    const json = JSON.stringify(object);
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        body: data
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        },
+        body: json
       });
       const result = await response.json();
       
