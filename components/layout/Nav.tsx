@@ -21,7 +21,7 @@ function Logo() {
       <span className="relative grid size-11 place-items-center">
         <img src="/devs-logo-static.svg" alt="DevS Logo" className="size-11" />
       </span>
-      <span className="hidden font-display text-sm font-bold tracking-normal text-ink sm:inline">
+      <span className="font-display text-sm font-bold tracking-normal text-ink">
         <RollingText>Developer Society</RollingText>
       </span>
     </a>
