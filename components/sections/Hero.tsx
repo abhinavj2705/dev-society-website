@@ -16,7 +16,7 @@ const media = [
 
 export function Hero() {
   return (
-    <section className="container-main pt-20 md:pt-32">
+    <section className="container-main pt-12 md:pt-32">
       <motion.div variants={stagger} initial="hidden" animate="show" className="grid items-start gap-12 pt-4 lg:grid-cols-[auto_1fr] lg:gap-20">
 
           {/* Floating brand card — left */}
@@ -35,13 +35,13 @@ export function Hero() {
 
           {/* Title + buttons — right */}
           <div className="text-center lg:text-left">
-            <motion.h1 variants={reveal} className="font-display text-[clamp(3.2rem,11vw,9.5rem)] font-bold leading-[0.95] tracking-tight text-ink">
+            <motion.h1 variants={reveal} className="font-display text-[clamp(4rem,13vw,9.5rem)] font-bold leading-[0.95] tracking-tight text-ink">
               Developer&apos;s Society
               <br />
               <span className="text-[clamp(1.5rem,6vw,4rem)] font-medium text-zinc-400">Christ University</span>
             </motion.h1>
             <motion.div variants={reveal} className="mt-8 flex flex-wrap items-center justify-center gap-4 lg:mt-10 lg:justify-start">
-              <ArrowButton href="/contact" label="Start a Project" />
+              <ArrowButton href="/team" label="View Our Team" />
               <ArrowButton href="/all-projects" label="See Projects" variant="ghost" />
             </motion.div>
           </div>

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { ScrollToAnchor } from "@/components/layout/ScrollToAnchor";
 import { Nav } from "@/components/layout/Nav";
@@ -14,6 +14,13 @@ const inter = Inter({
   preload: true
 });
 
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  variable: "--font-space-grotesk",
+  display: "swap",
+  preload: true
+});
+
 export const metadata: Metadata = {
   title: "Developer Society Portfolio",
   description: "Designer and developer portfolio for Developer Society, Christ University."
@@ -21,7 +28,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={inter.variable}>
+    <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable}`}>
       <body className="overflow-x-clip">
         <ScrollToAnchor>
           <BlurTop />

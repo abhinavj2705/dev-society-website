@@ -30,7 +30,7 @@ const config: Config = {
         }
       },
       fontFamily: {
-        display: ["var(--font-inter)", "Inter", "sans-serif"],
+        display: ["var(--font-space-grotesk)", "Inter", "sans-serif"],
         body: ["var(--font-inter)", "Inter", "sans-serif"],
         soft: ["var(--font-inter)", "Inter", "sans-serif"]
       },
