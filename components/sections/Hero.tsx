@@ -16,13 +16,13 @@ const media = [
 
 export function Hero() {
   return (
-    <section className="container-main pt-28 md:pt-32">
+    <section className="container-main pt-20 md:pt-32">
       <motion.div variants={stagger} initial="hidden" animate="show" className="grid items-start gap-12 pt-4 lg:grid-cols-[auto_1fr] lg:gap-20">
 
           {/* Floating brand card — left */}
           <motion.div
             variants={reveal}
-            className="mx-auto flex w-fit flex-col items-center gap-5 rounded-[32px] bg-white p-6 shadow-[0_4px_48px_rgba(0,0,0,0.07)] md:p-8 lg:mx-0 lg:mt-2"
+            className="hidden md:flex mx-auto w-fit flex-col items-center gap-5 rounded-[32px] bg-white p-6 shadow-[0_4px_48px_rgba(0,0,0,0.07)] md:p-8 lg:mx-0 lg:mt-2"
           >
             <div className="grid size-[140px] place-items-center rounded-2xl bg-zinc-50 p-4 md:size-[180px]">
               <Image src="/devs-logo.svg" alt="Developer Society logo" width={180} height={180} className="h-full w-full object-contain" priority />
