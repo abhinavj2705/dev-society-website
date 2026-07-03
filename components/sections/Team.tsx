@@ -40,7 +40,7 @@ export function Team() {
               </div>
               <h3 className="font-display text-2xl font-bold text-ink">{member.name}</h3>
               <p className="mt-2 text-sm font-semibold uppercase tracking-wider text-zinc-500">{member.role}</p>
-              <div className="mt-8 flex justify-center">
+              {/* <div className="mt-8 flex justify-center">
                 <a
                   href={member.linkedin}
                   target="_blank"
@@ -50,12 +50,12 @@ export function Team() {
                 >
                   <Linkedin size={20} />
                 </a>
-              </div>
+              </div> */}
             </motion.article>
           ))}
         </motion.div>
         
-        <motion.div variants={reveal} initial="hidden" whileInView="show" viewport={{ once: true }} className="mt-24 flex flex-col items-center text-center">
+        {/* <motion.div variants={reveal} initial="hidden" whileInView="show" viewport={{ once: true }} className="mt-24 flex flex-col items-center text-center">
           <div className="mb-6 inline-flex size-20 items-center justify-center rounded-[24px] bg-white shadow-[0_1px_20px_rgba(24,24,27,0.04)] text-accent">
             <Mail size={32} />
           </div>
@@ -66,7 +66,7 @@ export function Team() {
           <div className="mt-8">
             <ArrowButton href="mailto:devsociety.cu@gmail.com" label="Email our team" />
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );
