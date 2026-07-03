@@ -9,21 +9,33 @@ import ArrowButton from "@/components/ui/ArrowButton";
 const teamMembers = [
   {
     name: "Mandar Waigaonkar",
-    role: "President / Lead Analyst",
+    role: "President and Lead Software Developer",
     linkedin: "https://www.linkedin.com/in/waigaonkarmandar",
     image: "/team/Mandar _Waigaonkar.png"
   },
   {
     name: "Charushree .S",
-    role: "Analyst",
+    role: "Lead Software Developer",
     linkedin: "https://www.linkedin.com/in/charushrees",
     image: "/team/Charushree _S.png"
   },
   {
     name: "Abhinav Jadhav",
-    role: "Software Developer",
+    role: "Lead Software Developer",
     linkedin: "https://www.linkedin.com/in/abhinav-jadhav-",
     image: "/team/Abhinav_jadhav.png"
+  },
+  {
+    name: "Akshat Tiwari",
+    role: "Lead Software Developer",
+    linkedin: "https://www.linkedin.com/in/akshattiwari01",
+    image: "/team/akshath_tiwari.png"
+  },
+  {
+    name: "Aditya Raj",
+    role: "Lead Software Developer",
+    linkedin: "https://www.linkedin.com/in/adithya-raj-1ab190316",
+    image: "/team/aditya_raj.jpeg"
   }
 ];
 
@@ -32,15 +44,15 @@ export function Team() {
     <section className="section-pad">
       <div className="container-main">
         <SectionHeader eyebrow="Our Team" title="Meet the minds behind Dev Society" subtitle="Driven by passion, innovation, and a love for building." />
-        <motion.div variants={stagger} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.2 }} className="mx-auto mt-16 grid max-w-[1000px] gap-6 md:grid-cols-3">
+        <motion.div variants={stagger} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.2 }} className="mx-auto mt-16 flex flex-wrap justify-center max-w-[1000px] gap-6">
           {teamMembers.map((member) => (
-            <motion.article key={member.name} variants={reveal} className="group relative overflow-hidden rounded-[28px] bg-white p-8 text-center shadow-[0_1px_20px_rgba(24,24,27,0.04)] transition-all hover:-translate-y-1 hover:shadow-soft md:p-10">
+            <motion.article key={member.name} variants={reveal} className="w-full md:w-[calc(33.333%-16px)] group relative overflow-hidden rounded-[28px] bg-white p-8 text-center shadow-[0_1px_20px_rgba(24,24,27,0.04)] transition-all hover:-translate-y-1 hover:shadow-soft md:p-10">
               <div className="mx-auto mb-6 relative size-28 overflow-hidden rounded-[24px] bg-zinc-50 shadow-sm transition-transform duration-300 group-hover:scale-105">
                 <img src={member.image} alt={member.name} className="h-full w-full object-cover" />
               </div>
               <h3 className="font-display text-2xl font-bold text-ink">{member.name}</h3>
               <p className="mt-2 text-sm font-semibold uppercase tracking-wider text-zinc-500">{member.role}</p>
-              {/* <div className="mt-8 flex justify-center">
+              <div className="mt-8 flex justify-center">
                 <a
                   href={member.linkedin}
                   target="_blank"
@@ -50,7 +62,7 @@ export function Team() {
                 >
                   <Linkedin size={20} />
                 </a>
-              </div> */}
+              </div>
             </motion.article>
           ))}
         </motion.div>
