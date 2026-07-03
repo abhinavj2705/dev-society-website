@@ -57,7 +57,7 @@ export function Nav() {
         >
           <Logo />
           <div className="hidden items-center gap-9 text-sm font-semibold text-zinc-700 md:flex">
-            {[...links, { label: "404", href: "/404" }].map((link) => {
+            {links.map((link) => {
               const active = pathname === link.href || (link.href === "/all-projects" && pathname.startsWith("/project-details"));
               return (
                 <a
@@ -118,7 +118,7 @@ export function Nav() {
           </button>
         </div>
         <div className="mt-8 grid gap-2">
-          {[...links, { label: "404", href: "/404" }, { label: "Book a call", href: "https://cal.com/" }].map((link) => (
+          {links.map((link) => (
             <a
               key={link.href}
               href={link.href}

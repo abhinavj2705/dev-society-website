@@ -16,13 +16,13 @@ const media = [
 
 export function Hero() {
   return (
-    <section className="container-main pt-28 md:pt-32">
+    <section className="container-main pt-12 md:pt-32">
       <motion.div variants={stagger} initial="hidden" animate="show" className="grid items-start gap-12 pt-4 lg:grid-cols-[auto_1fr] lg:gap-20">
 
           {/* Floating brand card — left */}
           <motion.div
             variants={reveal}
-            className="mx-auto flex w-fit flex-col items-center gap-5 rounded-[32px] bg-white p-6 shadow-[0_4px_48px_rgba(0,0,0,0.07)] md:p-8 lg:mx-0 lg:mt-2"
+            className="hidden md:flex mx-auto w-fit flex-col items-center gap-5 rounded-[32px] bg-white p-6 shadow-[0_4px_48px_rgba(0,0,0,0.07)] md:p-8 lg:mx-0 lg:mt-2"
           >
             <div className="grid size-[140px] place-items-center rounded-2xl bg-zinc-50 p-4 md:size-[180px]">
               <Image src="/devs-logo.svg" alt="Developer Society logo" width={180} height={180} className="h-full w-full object-contain" priority />
@@ -35,13 +35,13 @@ export function Hero() {
 
           {/* Title + buttons — right */}
           <div className="text-center lg:text-left">
-            <motion.h1 variants={reveal} className="font-display text-[clamp(3.2rem,11vw,9.5rem)] font-bold leading-[0.95] tracking-tight text-ink">
+            <motion.h1 variants={reveal} className="font-display text-[clamp(4rem,13vw,9.5rem)] font-bold leading-[0.95] tracking-tight text-ink">
               Developer&apos;s Society
               <br />
               <span className="text-[clamp(1.5rem,6vw,4rem)] font-medium text-zinc-400">Christ University</span>
             </motion.h1>
             <motion.div variants={reveal} className="mt-8 flex flex-wrap items-center justify-center gap-4 lg:mt-10 lg:justify-start">
-              <ArrowButton href="/contact" label="Start a Project" />
+              <ArrowButton href="/team" label="View Our Team" />
               <ArrowButton href="/all-projects" label="See Projects" variant="ghost" />
             </motion.div>
           </div>
