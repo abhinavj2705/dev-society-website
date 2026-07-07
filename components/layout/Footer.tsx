@@ -28,7 +28,7 @@ export function Footer() {
                   className="h-full w-full object-contain"
                 />
               </div>
-              <motion.div
+              {/* <motion.div
                 variants={stagger}
                 initial="hidden"
                 whileInView="show"
@@ -53,7 +53,7 @@ export function Footer() {
                     <RollingText>{String(label)}</RollingText>
                   </motion.a>
                 ))}
-              </motion.div>
+              </motion.div> */}
             </div>
           </div>
           <div>
