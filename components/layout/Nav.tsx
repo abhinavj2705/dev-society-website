@@ -12,6 +12,7 @@ const links = [
   { label: "About", href: "/about" },
   { label: "Projects", href: "/all-projects" },
   { label: "Our team", href: "/our-team" },
+  { label: "Recruitment", href: "https://dev-soc-registrations.vercel.app/" },
   { label: "Contact", href: "/contact" }
 ];
 
@@ -64,6 +65,8 @@ export function Nav() {
                   key={link.href}
                   href={link.href}
                   className={cn("group relative transition hover:text-ink active:text-accent", active ? "text-accent" : "text-zinc-700")}
+                  target={link.href.startsWith("http") ? "_blank" : undefined}
+                  rel={link.href.startsWith("http") ? "noreferrer" : undefined}
                 >
                   <RollingText>{link.label}</RollingText>
                   <span
