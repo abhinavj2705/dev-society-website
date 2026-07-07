@@ -26,16 +26,21 @@ export const metadata: Metadata = {
   description: "Designer and developer portfolio for Developer Society, Christ University."
 };
 
+import { BackgroundArtifacts } from "@/components/ui/BackgroundArtifacts";
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable}`}>
-      <body className="overflow-x-clip">
+      <body className="overflow-x-clip relative">
         <ScrollToAnchor>
-          <BlurTop />
-          <Nav />
-          {children}
-          <Footer />
-          <BuyPill />
+          <BackgroundArtifacts />
+          <div className="relative z-10 flex min-h-screen flex-col">
+            <BlurTop />
+            <Nav />
+            {children}
+            <Footer />
+            <BuyPill />
+          </div>
         </ScrollToAnchor>
       </body>
     </html>
