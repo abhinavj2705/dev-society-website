@@ -1,15 +1,15 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Code2, Figma, LifeBuoy, Palette } from "lucide-react";
+import { GraduationCap, MonitorSmartphone, Palette, Lightbulb } from "lucide-react";
 import { iconPop, reveal, stagger } from "@/lib/animations";
 import { SectionHeader } from "@/components/ui/SectionHeader";
 
 const services = [
-  { icon: Figma, title: "UX-UI & Creative", copy: "Crafting clean, user-friendly sites that reflect your brand & deliver a seamless experience." },
-  { icon: Code2, title: "Web Development", copy: "Building fast, no-code websites that are easy to manage and optimized for every device." },
-  { icon: Palette, title: "Brand Identity", copy: "Cohesive visual systems, from logos to colors, make your brand instantly recognizable." },
-  { icon: LifeBuoy, title: "Design Consultation", copy: "Offering strategic guidance to help you plan, refine, and execute your design ideas effectively." }
+  { icon: GraduationCap, title: "Campus Solutions", copy: "Developing software that improves student experiences and streamlines university processes." },
+  { icon: MonitorSmartphone, title: "Web & Mobile Apps", copy: "Creating responsive, production-ready applications with modern technologies." },
+  { icon: Palette, title: "Design & Branding", copy: "Crafting clean interfaces and visual identities for campus products and events." },
+  { icon: Lightbulb, title: "Innovation Lab", copy: "A space where students build, experiment, and turn ideas into impactful products." }
 ];
 
 export function Services() {
