@@ -21,7 +21,7 @@ export function Services() {
           {services.map(({ icon: Icon, title, copy }) => (
             <motion.article key={title} variants={reveal} className="group rounded-[28px] bg-white p-8 transition hover:-translate-y-1 hover:shadow-soft md:p-10">
               <div className="flex items-center gap-5">
-                <motion.span {...iconPop} className="grid size-20 place-items-center rounded-full bg-zinc-50 text-accent transition group-hover:bg-orange-50">
+                <motion.span {...iconPop} className="grid size-20 place-items-center rounded-full border border-zinc-200 bg-zinc-50 text-accent transition group-hover:border-transparent group-hover:bg-orange-50">
                   <Icon size={32} strokeWidth={2.1} />
                 </motion.span>
                 <h3 className="max-w-[230px] font-display text-2xl font-bold leading-tight">{title}</h3>

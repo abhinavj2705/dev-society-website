@@ -27,7 +27,7 @@ export function Footer() {
                 className="flex flex-wrap gap-2"
               >
                 {[
-                  ["LinkedIn", "https://linkedin.com", <Linkedin key="li" size={16} />],
+                  ["LinkedIn", "https://www.linkedin.com/company/devsoccu/", <Linkedin key="li" size={16} />],
                   ["GitHub", "https://github.com", <Github key="gh" size={16} />],
                   ["Instagram", "https://instagram.com", <Instagram key="ig" size={16} />],
                   ["Facebook", "https://facebook.com", <Facebook key="fb" size={16} />]
