@@ -70,7 +70,7 @@ export function Footer() {
                     variants={socialChild}
                     target={href.startsWith("http") ? "_blank" : undefined}
                     rel={href.startsWith("http") ? "noreferrer" : undefined}
-                    className="group inline-flex min-h-9 items-center justify-center rounded-pill border border-zinc-200 px-4 text-sm font-semibold transition hover:bg-accent hover:text-white hover:border-transparent"
+                    className={`group inline-flex min-h-9 items-center justify-center rounded-pill border border-zinc-200 px-4 text-sm font-semibold transition hover:bg-accent hover:text-white hover:border-transparent ${item === "404" ? "hidden" : ""}`}
                   >
                     <RollingText>{item}</RollingText>
                   </motion.a>

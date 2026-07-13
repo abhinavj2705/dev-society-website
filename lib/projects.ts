@@ -72,11 +72,12 @@ export function getProject(slug: string) {
 }
 
 export function getAdjacentProjects(slug: string) {
-  const index = projects.findIndex((project) => project.slug === slug);
+  const activeProjects = projects.filter((project) => project.category !== "COMING SOON");
+  const index = activeProjects.findIndex((project) => project.slug === slug);
   if (index === -1) return { previous: null, next: null };
 
   return {
-    previous: projects[(index - 1 + projects.length) % projects.length],
-    next: projects[(index + 1) % projects.length]
+    previous: activeProjects[(index - 1 + activeProjects.length) % activeProjects.length],
+    next: activeProjects[(index + 1) % activeProjects.length]
   };
 }

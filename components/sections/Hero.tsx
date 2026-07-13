@@ -8,9 +8,8 @@ import { HeroMediaMarquee } from "@/components/sections/HeroMediaMarquee";
 
 const media = [
   { src: "/mockups/cu-nav.jpg", alt: "CU Nav App", wide: false },
-  { src: "/mockups/book.svg", alt: "Book Mockup", wide: false },
+  { src: "/mockups/coming-soon.jpg", alt: "Coming Soon", wide: false },
   { src: "/mockups/cu-now.jpg", alt: "CU Now App", wide: false },
-  { src: "/mockups/monitor.svg", alt: "Monitor Mockup", wide: true },
   { src: "/mockups/coming-soon.jpg", alt: "Coming Soon", wide: false }
 ];
 
