@@ -10,7 +10,7 @@ const faqs = [
   ["What is Developer Society?", "We are a student-run community at Christ University focused on building real-world projects, learning new technologies, and collaborating on innovative software solutions."],
   ["Who can join the society?", "We periodically recruit students who demonstrate exceptional technical aptitude, problem-solving skills, and a commitment to innovation and engineering excellence."],
   ["What kind of projects do you build?", "We build a wide range of projects, from university tools and web applications to open-source software and UI/UX design prototypes."],
-  ["How can I collaborate with you?", "You can reach out to us during our regular meetings, participate in our hackathons, or contact our core team to pitch an idea for collaboration. You can also get in touch with us anytime via email, and we'll be happy to discuss potential opportunities."],
+  ["How can I collaborate with you?", "You can reach out to us during our regular meetings. You can also get in touch with us anytime via email, and we'll be happy to discuss potential opportunities."],
   ["Do I need prior coding experience?", "Basic coding knowledge is recommended. While prior project experience is not mandatory, familiarity with programming fundamentals and a genuine interest in technology will help you make the most of our technical initiatives."]
 ];
 
